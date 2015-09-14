@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+
+/**
+ * Command line interface of tmplconv.
+ */
+
+"use strict";
+
+var program = require('commander'),
+    pkg = require('../package'),
+    tmplconv = require('../lib');
+
+program
+    .version(pkg['version'])
+    .description(pkg['description'])
+    .option('-s, --silent', "Disable console logs")
+    .option('-c, --clean', "Cleanup destination directory before convert")
+    .option('-n, --once', "Write only first time. Skip if already exists");
+
+
+program.parse(process.argv);
+
+//=========================
+// Run main command
+//=========================
+
+var dest = program.args[0];
+tmplconv(dest, {
+    silent: program.silent,
+    clean: program.clean,
+    once: program.once
+}, _done);
+
+/** When command done. */
+function _done(err) {
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    } else {
+        process.exit(0);
+    }
+}
+
+program.parse(process.argv);

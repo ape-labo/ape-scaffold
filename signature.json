@@ -1,0 +1,27 @@
+{
+  "name": "tmplconv",
+  "main": true,
+  "args": [
+    {
+      "name": "dest",
+      "desc": "Destination directory name"
+    }
+  ],
+  "options": [
+    {
+      "name": "silent",
+      "short": "s",
+      "desc": "Disable console logs"
+    },
+    {
+      "name": "clean",
+      "short": "c",
+      "desc": "Cleanup destination directory before convert"
+    },
+    {
+      "name": "once",
+      "short": "n",
+      "desc": "Write only first time. Skip if already exists"
+    }
+  ]
+}
