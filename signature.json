@@ -14,14 +14,9 @@
       "desc": "Disable console logs"
     },
     {
-      "name": "clean",
-      "short": "c",
-      "desc": "Cleanup destination directory before convert"
-    },
-    {
-      "name": "once",
-      "short": "n",
-      "desc": "Write only first time. Skip if already exists"
+      "name": "force",
+      "short": "f",
+      "desc": "Force to generate"
     }
   ]
 }

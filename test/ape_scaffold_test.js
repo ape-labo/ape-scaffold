@@ -17,7 +17,8 @@ exports.tearDown = function (done) {
 
 exports['Ape scaffold'] = function (test) {
     apeScaffold(tmpDir + '/foo/bar', {
-        straight: true
+        straight: true,
+        force: true
     }, function (err) {
         test.ifError(err);
         test.done();

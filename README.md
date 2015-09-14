@@ -74,8 +74,7 @@ $ ape-scaffold -h
     -h, --help     output usage information
     -V, --version  output the version number
     -s, --silent   Disable console logs
-    -c, --clean    Cleanup destination directory before convert
-    -n, --once     Write only first time. Skip if already exists
+    -f, --force    Force to generate
 
 
 ```

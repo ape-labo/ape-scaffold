@@ -16,6 +16,14 @@ apeTasking.runTasks('tmplify', [
         tmplconv.tmplify('asset/prototype', 'asset/tmpl', {
             clean: true,
             mode: '444',
+            pattern: [
+                '**/*.*',
+                '.*'
+            ],
+            ignore: [
+                '.DS_Store',
+                '.svg'
+            ],
             data: {
                 'github_repository': "my-wonderful-repo/my-awesome-pkg",
                 'package_name': 'my-awesome-pkg',

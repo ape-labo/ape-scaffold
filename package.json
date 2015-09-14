@@ -1,6 +1,6 @@
 {
   "name": "ape-scaffold",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "Two way template converter.",
   "main": "lib",
   "bin": {
@@ -29,6 +29,7 @@
     "askconfig": "^1.0.1",
     "async": "^1.4.2",
     "commander": "^2.8.1",
+    "expandglob": "^1.0.1",
     "extend": "^3.0.0",
     "stringcase": "^1.2.5",
     "tmplconv": "^1.0.1"
