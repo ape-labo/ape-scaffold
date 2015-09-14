@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * Command line interface of tmplconv.
+ * Command line interface of ape-scaffold.
  */
 
 "use strict";
 
 var program = require('commander'),
     pkg = require('../package'),
-    tmplconv = require('../lib');
+    apeScaffold = require('../lib');
 
 program
     .version(pkg['version'])
@@ -25,7 +25,7 @@ program.parse(process.argv);
 //=========================
 
 var dest = program.args[0];
-tmplconv(dest, {
+apeScaffold(dest, {
     silent: program.silent,
     clean: program.clean,
     once: program.once

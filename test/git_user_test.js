@@ -15,7 +15,7 @@ exports.tearDown = function (done) {
 
 exports['Default data'] = function (test) {
     gitUser(function (err, data) {
-        console.log('data',data);
+        //console.log('data',data);
         test.ifError(err);
         test.done();
     });

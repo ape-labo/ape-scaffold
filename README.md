@@ -56,8 +56,8 @@ npm install ape-scaffold -g
 Usage
 ---------
 
-```javascript
-
+```bash
+$ ape-scaffold my-awesome-pkg
 ```
 
 ### CLI Help

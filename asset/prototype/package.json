@@ -1,7 +1,7 @@
 {
   "name": "my-awesome-pkg",
   "version": "1.0.0",
-  "description": "Two way template converter.",
+  "description": "This is my awesome package.",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js"

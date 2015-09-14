@@ -15,13 +15,14 @@ apeTasking.runTasks('tmplify', [
     function (callback) {
         tmplconv.tmplify('asset/prototype', 'asset/tmpl', {
             clean: true,
-            mode:'444',
+            mode: '444',
             data: {
-                'package-name': 'my-awesome-pkg',
-                'github-repository': "my-wonderful-repo/my-wonderful-repo",
-                'author-name': 'Taka Okunishi',
-                'email': 'okunishitaka.com@gmail.com',
-                'author-url':'http://okunishitaka.com'
+                'github_repository': "my-wonderful-repo/my-awesome-pkg",
+                'package_name': 'my-awesome-pkg',
+                'package_description': 'This is my awesome package.',
+                'author_name': 'Taka Okunishi',
+                'author_email': 'okunishitaka.com@gmail.com',
+                'author_url': 'http://okunishitaka.com'
             }
         }, callback);
     }
