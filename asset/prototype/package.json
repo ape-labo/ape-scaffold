@@ -22,8 +22,7 @@
   "dependencies": {
     "argx": "*",
     "askconfig": "*",
-    "async": "*",
-    "commander": "*"
+    "async": "*"
   },
   "devDependencies": {
     "ape-covering": "*",
@@ -37,6 +36,5 @@
     "coz-tmpl": "*",
     "injectmock": "*",
     "sharegit": "*"
-  },
-  "preferGlobal": true
+  }
 }
