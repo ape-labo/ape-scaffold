@@ -65,7 +65,7 @@ $ ape-scaffold my-awesome-pkg
 ```bash
 $ ape-scaffold -h
 
-  Usage: ape-scaffold [options]
+  Usage: ape-scaffold [options] <dest> 
 
   Two way template converter.
 

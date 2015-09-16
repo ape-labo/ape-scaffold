@@ -12,6 +12,7 @@ var program = require('commander'),
 
 program
     .version(pkg['version'])
+    .usage('[options] <dest> ')
     .description(pkg['description'])
     .option('-s, --silent', "Disable console logs")
     .option('-f, --force', "Force to generate");
