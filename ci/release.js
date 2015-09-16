@@ -16,7 +16,8 @@ apeTasking.runTasks('release', [
         apeReleasing.releasePackage({
             beforeRelease: [
                 './ci/build.js',
-                './ci/test.js'
+                './ci/test.js',
+                './ci/tmplify.js'
             ]
         }, callback);
     }
