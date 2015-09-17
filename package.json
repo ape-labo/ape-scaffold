@@ -1,6 +1,6 @@
 {
   "name": "ape-scaffold",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Two way template converter.",
   "main": "lib",
   "bin": {
