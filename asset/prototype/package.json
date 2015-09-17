@@ -21,7 +21,6 @@
   "homepage": "https://github.com/my-wonderful-repo/my-awesome-pkg#readme",
   "dependencies": {
     "argx": "*",
-    "askconfig": "*",
     "async": "*"
   },
   "devDependencies": {
