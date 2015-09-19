@@ -18,7 +18,8 @@ apeTasking.runTasks('tmplify', [
             mode: '444',
             pattern: [
                 '**/*.*',
-                '.*'
+                '.*',
+                '+(test|lib)/**/.*.bud'
             ],
             ignore: [
                 '.DS_Store',
