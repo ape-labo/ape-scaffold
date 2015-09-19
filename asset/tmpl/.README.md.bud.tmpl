@@ -5,7 +5,6 @@
 "use strict";
 
 var apeTmpl = require('ape-tmpl'),
-    childProcess = require('child_process'),
     pkg = require('./package.json');
 
 module.exports = apeTmpl.readmeMdBud({
@@ -20,7 +19,7 @@ module.exports = apeTmpl.readmeMdBud({
         npm: true
     },
     overview: 'doc/overview.md',
-    links: require('./cod/links'),
+    links: require('./doc/links'),
     vars: {}
 });
 
