@@ -45,7 +45,7 @@ Installation
 -----
 
 ```bash
-npm install ape-scaffold -g
+$ npm install ape-scaffold -g
 ```
 
 <!-- Section from "doc/readme/01.Installation.md.hbs" End -->
