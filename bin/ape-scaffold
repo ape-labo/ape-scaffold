@@ -17,8 +17,8 @@ program
     .option('-s, --silent', "Disable console logs")
     .option('-f, --force', "Force to generate");
 
-
 program.parse(process.argv);
+
 
 //=========================
 // Run main command
@@ -28,10 +28,11 @@ var dest = program.args[0];
 apeScaffold(dest, {
     silent: program.silent,
     force: program.force
-}, _done);
+}, done);
+
 
 /** When command done. */
-function _done(err) {
+function done(err) {
     if (err) {
         console.error(err);
         process.exit(1);
@@ -39,5 +40,3 @@ function _done(err) {
         process.exit(0);
     }
 }
-
-program.parse(process.argv);
