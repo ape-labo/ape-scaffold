@@ -29,7 +29,7 @@ program.parse(process.argv);
 apeScaffold.apply(apeScaffold, program.args.concat({
     silent: program.silent,
     force: program.force
-}), done);
+}).concat(done));
 
 
 /** When command done. */
