@@ -6,10 +6,10 @@
 
 "use strict";
 
-var apeScaffold = require('./ape_scaffold'),
+const apeScaffold = require('./ape_scaffold'),
     pkg = require('../package.json');
 
-var lib = apeScaffold.bind(this);
+let lib = apeScaffold.bind(this);
 lib.version = pkg.version;
 lib.apeScaffold = apeScaffold;
 

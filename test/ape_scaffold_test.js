@@ -1,27 +1,30 @@
 /**
  * Test case for apeScaffold.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 
-var apeScaffold = require('../lib/ape_scaffold.js');
+const apeScaffold = require('../lib/ape_scaffold.js'),
+    assert = require('assert');
 
-var tmpDir = __dirname + '/../tmp';
+const tmpDir = __dirname + '/../tmp';
 
-exports.setUp = function (done) {
-    done();
-};
-
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Ape scaffold'] = function (test) {
-    apeScaffold(tmpDir + '/foo/bar', {
-        straight: true,
-        force: true
-    }, function (err) {
-        test.ifError(err);
-        test.done();
+describe('ape-scaffold', ()=> {
+    before((done)=> {
+        done();
     });
-};
+    after((done) => {
+        done();
+    });
+
+    it('Apply scaffold', (done) => {
+        apeScaffold(tmpDir + '/foo/bar', {
+            straight: true,
+            force: true
+        }, (err)=> {
+            assert.ifError(err);
+            done();
+        });
+    });
+});
+
 

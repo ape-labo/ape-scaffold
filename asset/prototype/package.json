@@ -35,5 +35,8 @@
     "coz-tmpl": "*",
     "injectmock": "*",
     "sharegit": "*"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   }
 }

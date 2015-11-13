@@ -6,7 +6,7 @@
 
 var cozTmpl = require('coz-tmpl');
 
-module.exports = cozTmpl.nodeunitTestJsBud({
+module.exports = cozTmpl.mochaTestJsBud({
     src: [
         __dirname + '/../lib/**/*.js'
     ],

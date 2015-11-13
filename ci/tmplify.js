@@ -12,7 +12,7 @@ var apeTasking = require('ape-tasking'),
     tmplconv = require('tmplconv');
 
 apeTasking.runTasks('tmplify', [
-    function (callback) {
+    (callback)=> {
         tmplconv.tmplify('asset/prototype', 'asset/tmpl', {
             clean: true,
             mode: '444',

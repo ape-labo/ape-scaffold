@@ -1,20 +1,23 @@
 /**
  * Test case for render.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 
 var render = require('../lib/render.js');
 
-exports.setUp = function(done) {
-    done();
-};
+describe('render', function suite() {
 
-exports.tearDown = function(done) {
-    done();
-};
+    before(function setup(done) {
+        done();
+    });
 
-exports['Render'] = function(test){
+    after(function teardown(done) {
+        done();
+    });
 
-    test.done();
-};
+
+    it('Render', function (done) {
+        done();
+    });
+});
 
