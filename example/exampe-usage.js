@@ -1,4 +1,6 @@
-var apeScaffold = require('ape-scaffold');
+"use strict";
+
+const apeScaffold = require('ape-scaffold');
 
 apeScaffold({}, (err) => {
     /*...*/

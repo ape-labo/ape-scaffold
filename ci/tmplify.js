@@ -8,7 +8,7 @@
 
 process.chdir(__dirname + '/..');
 
-var apeTasking = require('ape-tasking'),
+const apeTasking = require('ape-tasking'),
     tmplconv = require('tmplconv');
 
 apeTasking.runTasks('tmplify', [

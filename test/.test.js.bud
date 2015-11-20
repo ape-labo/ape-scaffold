@@ -4,9 +4,9 @@
 
 "use strict";
 
-var cozTmpl = require('coz-tmpl');
+var apeTmpl = require('ape-tmpl');
 
-module.exports = cozTmpl.mochaTestJsBud({
+module.exports = apeTmpl.mochaTestJsBud({
     src: [
         __dirname + '/../lib/**/*.js'
     ],
@@ -14,5 +14,5 @@ module.exports = cozTmpl.mochaTestJsBud({
 });
 
 if (!module.parent) {
-    require('coz').render(__filename);
+    require('ape').render(__filename);
 }

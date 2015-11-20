@@ -7,7 +7,7 @@
 
 "use strict";
 
-var program = require('commander'),
+const program = require('commander'),
     pkg = require('../package'),
     apeScaffold = require('../lib');
 

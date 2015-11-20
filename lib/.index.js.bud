@@ -4,8 +4,7 @@
 
 "use strict";
 
-const cozTmpl = require('coz-tmpl'),
-    pkg = require('../package.json');
+const pkg = require('../package.json');
 
 module.exports = {
     force: true,
