@@ -42,9 +42,9 @@ Two way template converter.
 <!-- Sections Start -->
 <a name="sections"></a>
 
-<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+<!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
-<a name="section-doc-readme-01-installation-md"></a>
+<a name="section-doc-guides-01-installation-md"></a>
 Installation
 -----
 
@@ -53,11 +53,11 @@ $ npm install ape-scaffold -g
 ```
 
 
-<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+<!-- Section from "doc/guides/01.Installation.md.hbs" End -->
 
-<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
+<!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
-<a name="section-doc-readme-02-usage-md"></a>
+<a name="section-doc-guides-02-usage-md"></a>
 Usage
 ---------
 
@@ -85,7 +85,7 @@ $ ape-scaffold -h
 ```
 
 
-<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
+<!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
 
 <!-- Sections Start -->
