@@ -4,18 +4,18 @@
  * Build this project.
  */
 
-"use strict";
+'use strict'
 
-process.chdir(__dirname + '/..');
+process.chdir(`${__dirname}/..`);
 
 const apeTasking = require('ape-tasking'),
-    coz = require('coz');
+  coz = require('coz');
 
 apeTasking.runTasks('build', [
-    (callback) => {
-        coz.render([
-            '.*.bud',
-            '+(bin|doc|lib|test)/.*.bud'
-        ], callback);
-    }
+  (callback) => {
+    coz.render([
+      '.*.bud',
+      '+(bin|doc|lib|test)/.*.bud'
+    ], callback);
+  }
 ], true);

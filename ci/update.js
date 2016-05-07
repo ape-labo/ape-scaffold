@@ -4,9 +4,9 @@
  * Update project.
  */
 
-"use strict";
+'use strict'
 
-process.chdir(__dirname + '/..');
+process.chdir(`${__dirname}/..`);
 
 const apeTasking = require('ape-tasking'),
     apeUpdating = require('ape-updating');

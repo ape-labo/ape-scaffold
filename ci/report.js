@@ -4,9 +4,9 @@
  * Send reports.
  */
 
-"use strict";
+'use strict'
 
-process.chdir(__dirname + '/..');
+process.chdir(`${__dirname}/..`);
 
 const apeTasking = require('ape-tasking'),
     apeReporting = require('ape-reporting');

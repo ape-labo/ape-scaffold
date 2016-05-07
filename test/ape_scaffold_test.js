@@ -2,29 +2,30 @@
  * Test case for apeScaffold.
  * Runs with mocha.
  */
+'use strict'
 
-const apeScaffold = require('../lib/ape_scaffold.js'),
-    assert = require('assert');
+const apeScaffold = require('../lib/ape_scaffold.js')
+const assert = require('assert')
+const co = require('co')
+const fs = require('fs')
 
-const tmpDir = __dirname + '/../tmp';
+const tmpDir = `${__dirname}/../tmp`
 
-describe('ape-scaffold', ()=> {
-    before((done)=> {
-        done();
-    });
-    after((done) => {
-        done();
-    });
+describe('ape-scaffold', () => {
+  before(() => co(function * () {
+  }))
+  after(() => co(function * () {
+  }))
 
-    it('Apply scaffold', (done) => {
-        apeScaffold(tmpDir + '/foo/bar', {
-            straight: true,
-            force: true
-        }, (err)=> {
-            assert.ifError(err);
-            done();
-        });
-    });
-});
+  it('Apply scaffold', () => co(function * () {
+    yield apeScaffold(`${tmpDir}/foo/bar`, {
+      straight: true,
+      force: true
+    })
+    assert.ok(
+      fs.existsSync(`${tmpDir}/foo/bar`)
+    )
+  }))
+})
 
-
+/* global describe, before, after, it */

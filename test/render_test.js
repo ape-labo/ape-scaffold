@@ -2,22 +2,23 @@
  * Test case for render.
  * Runs with mocha.
  */
+'use strict'
 
-var render = require('../lib/render.js');
+const render = require('../lib/render.js')
 
-describe('render', function suite() {
+describe('render', function suite () {
 
-    before(function setup(done) {
-        done();
-    });
+  before(function setup (done) {
+    done()
+  })
 
-    after(function teardown(done) {
-        done();
-    });
+  after(function teardown (done) {
+    done()
+  })
 
+  it('Render', function (done) {
+    done()
+  })
+})
 
-    it('Render', function (done) {
-        done();
-    });
-});
-
+/* global describe, before, after, it */

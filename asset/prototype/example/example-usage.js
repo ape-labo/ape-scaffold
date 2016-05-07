@@ -1,3 +1,3 @@
-"use strict";
+'use strict'
 
-const myAwesomePkg = require('my-awesome-pkg');
+const myAwesomePkg = require('my-awesome-pkg')
