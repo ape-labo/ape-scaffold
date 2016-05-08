@@ -10,7 +10,10 @@ const apeScaffold = require('./ape_scaffold')
 const pkg = require('../package.json')
 
 let lib = apeScaffold.bind(this)
-lib.version = pkg.version
-lib.apeScaffold = apeScaffold
+
+Object.assign(lib, {
+  apeScaffold,
+  version: pkg.version
+})
 
 module.exports = lib
