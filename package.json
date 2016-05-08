@@ -1,6 +1,6 @@
 {
   "name": "ape-scaffold",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Two way template converter.",
   "main": "lib",
   "bin": {
@@ -32,7 +32,7 @@
     "filemode": "^2.0.1",
     "gitconfig": "^1.4.1",
     "stringcase": "^2.0.1",
-    "tmplconv": "^2.0.2"
+    "tmplconv": "^3.0.0"
   },
   "devDependencies": {
     "ape-covering": "^3.0.1",
