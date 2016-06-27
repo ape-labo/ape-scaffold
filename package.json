@@ -1,6 +1,6 @@
 {
   "name": "ape-scaffold",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "Two way template converter.",
   "main": "lib",
   "bin": {
@@ -32,18 +32,18 @@
     "filemode": "^2.0.1",
     "gitconfig": "^2.0.0",
     "stringcase": "^2.0.1",
-    "tmplconv": "^3.0.2"
+    "tmplconv": "^3.0.4"
   },
   "devDependencies": {
-    "ape-covering": "^3.0.1",
+    "ape-covering": "^3.0.3",
     "ape-formatting": "^1.0.0",
     "ape-releasing": "^3.1.1",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^3.1.2",
-    "ape-testing": "^3.0.1",
-    "ape-tmpl": "^5.0.1",
+    "ape-tasking": "^4.0.1",
+    "ape-testing": "^4.0.0",
+    "ape-tmpl": "^5.0.2",
     "ape-updating": "^3.0.2",
-    "coz": "^5.1.7",
+    "coz": "^6.0.2",
     "injectmock": "^2.0.0"
   },
   "engines": {

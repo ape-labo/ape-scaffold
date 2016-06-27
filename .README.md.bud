@@ -24,7 +24,7 @@ module.exports = apeTmpl.readmeMdBud({
   vars: {
     signature: require('./signature.json'),
     cli: {
-      get help () {
+      get help() {
         var execSync = childProcess.execSync
         var bin = require.resolve('./bin/ape-scaffold')
         return execSync && execSync(bin + ' -h')
