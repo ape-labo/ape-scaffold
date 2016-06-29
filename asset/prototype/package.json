@@ -4,7 +4,8 @@
   "description": "This is my awesome package.",
   "main": "lib",
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "./ci/test.js",
+    "prepublish": "./ci/build.js"
   },
   "repository": "my-wonderful-repo/my-awesome-pkg",
   "keywords": [
