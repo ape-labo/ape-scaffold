@@ -4,11 +4,11 @@
 
 'use strict'
 
-const apeTmpl = require('ape-tmpl')
+const { readmeMdBud } = require('ape-tmpl')
 const pkg = require('./package.json')
 
-module.exports = apeTmpl.readmeMdBud({
-  pkg: pkg,
+module.exports = readmeMdBud({
+  pkg,
   repo: pkg.repository,
   sections: 'doc/guides/*.md.hbs',
   badges: {
