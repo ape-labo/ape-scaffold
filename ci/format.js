@@ -8,11 +8,11 @@
 
 process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking')
-const apeFormatting = require('ape-formatting')
+const { runTasks } = require('ape-tasking')
+const { formatJs } = require('ape-formatting')
 
-apeTasking.runTasks('format', [
-  () => apeFormatting.formatJs([
+runTasks('format', [
+  () => formatJs([
     '.*.bud',
     'lib/.*.bud',
     'example/*.js',

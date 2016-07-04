@@ -8,10 +8,10 @@
 
 process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking')
+const { runTasks } = require('ape-tasking')
 const tmplconv = require('tmplconv')
 
-apeTasking.runTasks('tmplify', [
+runTasks('tmplify', [
   () => tmplconv.tmplify('asset/prototype', 'asset/tmpl', {
     clean: true,
     mode: '444',

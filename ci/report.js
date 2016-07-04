@@ -8,11 +8,9 @@
 
 process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking')
-const apeReporting = require('ape-reporting')
+const { runTasks } = require('ape-tasking')
+const { sendToCodeclimate } = require('ape-reporting')
 
-apeTasking.runTasks('report', [
-  (callback) => {
-    apeReporting.sendToCodeclimate('coverage/lcov.info', callback)
-  }
+runTasks('report', [
+  () => sendToCodeclimate('coverage/lcov.info', {})
 ], true)
