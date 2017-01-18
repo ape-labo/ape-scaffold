@@ -5,7 +5,7 @@
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepublish": "node ./ci/build.js"
+    "prepare": "node ./ci/build.js"
   },
   "repository": "my-wonderful-repo/my-awesome-pkg",
   "keywords": [

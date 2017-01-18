@@ -1,13 +1,14 @@
 {
   "name": "ape-scaffold",
-  "version": "3.1.17",
+  "version": "3.2.0",
   "description": "Two way template converter.",
   "main": "lib",
   "bin": {
     "ape-scaffold": "bin/ape-scaffold"
   },
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "node ./ci/test.js",
+    "prepare": "node ./ci/build.js && node ./ci/tmplify.js"
   },
   "repository": "ape-repo/ape-scaffold",
   "keywords": [
@@ -46,6 +47,6 @@
   },
   "engines": {
     "node": ">=6",
-    "npm": ">=3"
+    "npm": ">=4"
   }
 }
